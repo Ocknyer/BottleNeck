@@ -55,6 +55,8 @@
             target="_blank"
             >예매 폼</a
           >
+
+          <p class="visitRoot">오시는 길</p>
           <div id="map"></div>
         </div>
         <div class="lineup-section">
@@ -102,10 +104,15 @@
   </body>
   <script>
     var mapOptions = {
-      center: new naver.maps.LatLng(37.3595704, 127.105399),
-      zoom: 10,
+      center: new naver.maps.LatLng(37.550969, 126.923986),
+      zoom: 16,
     };
 
     var map = new naver.maps.Map('map', mapOptions);
+
+    var marker = new naver.maps.Marker({
+      position: new naver.maps.LatLng(37.550969, 126.923986),
+      map: map,
+    });
   </script>
 </html>
