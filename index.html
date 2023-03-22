@@ -21,23 +21,25 @@
       <div class="main-wrapper">
         <div class="title-wrapper">
           <h1 class="title">밴드 파수꾼 연합공연 '병목현상'</h1>
-          <p class="text-desc">
-            '병목현상'
-            <br />
-            넓은 길이 갑자기 좁아지면서 일어나는 정체 현상
-            <br />
+          <!-- <p class="text-desc"> -->
+          <div class="about">
+            <p class="concertName">'병목현상(甁目現象)'</p>
+            <p class="concertDesc">
+              넓은 길이 갑자기 좁아지면서 일어나는 정체 현상
+            </p>
+          </div>
+          <p>
             이번 공연 ‘병목현상’에서 들려드리는 곡들이 다소 생소할 수
             있기에
-            <br />
+          </p>
+          <p>
             여러분께 전해지는 감동의 노폭(路幅)이 좁을 수 있으리라
             생각합니다.
-            <br />
-            그럼에도 불구하고, 언젠가 해소되는 교통체증처럼
-            <br />
-            좁은 길을 헤치고 쾌감과 감동을 전해드릴 수 있도록
-            <br />
-            진심을 다하고자 하는 공연진의 의지를 담아내었습니다.
           </p>
+          <p>그럼에도 불구하고, 언젠가 해소되는 교통체증처럼</p>
+          <p>좁은 길을 헤치고 쾌감과 감동을 전해드릴 수 있도록</p>
+          <p>진심을 다하고자 하는 공연진의 의지를 담아내었습니다.</p>
+          <!-- </p> -->
         </div>
         <div class="info">
           <h2>공연안내</h2>
@@ -53,9 +55,9 @@
           <a
             href="https://forms.gle/N5xYhdhbJbjy3f4aA"
             target="_blank"
+            class="reservation"
             >예매 폼</a
           >
-
           <p class="visitRoot">오시는 길</p>
           <div id="map"></div>
         </div>
@@ -105,7 +107,7 @@
   <script>
     var mapOptions = {
       center: new naver.maps.LatLng(37.550969, 126.923986),
-      zoom: 16,
+      zoom: 15,
     };
 
     var map = new naver.maps.Map('map', mapOptions);

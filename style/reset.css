@@ -142,7 +142,8 @@ table {
 
 /* my */
 
-p {
+p,
+a {
   font-family: 'PyeongChang-Bold';
   font-weight: normal;
 }
