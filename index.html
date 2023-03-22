@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="style/reset.css" />
     <link rel="stylesheet" href="style/style.css" />
     <script src="js/index.js"></script>
+    <script
+      type="text/javascript"
+      src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=aejuu1jw3l"
+    ></script>
   </head>
   <body>
     <div id="container">
@@ -51,7 +55,7 @@
             target="_blank"
             >예매 폼</a
           >
-          >
+          <div id="map"></div>
         </div>
         <div class="lineup-section">
           <h2>lineup</h2>
@@ -96,4 +100,12 @@
       </div>
     </div>
   </body>
+  <script>
+    var mapOptions = {
+      center: new naver.maps.LatLng(37.3595704, 127.105399),
+      zoom: 10,
+    };
+
+    var map = new naver.maps.Map('map', mapOptions);
+  </script>
 </html>

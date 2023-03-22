@@ -38,6 +38,11 @@ h2 {
   margin-bottom: 50px;
 }
 
+#map {
+  width: 100px;
+  height: 100px;
+}
+
 /* lineup */
 .lineup-section {
   text-align: center;
