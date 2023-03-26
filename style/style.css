@@ -268,6 +268,7 @@ h2 {
   .main-wrapper {
     width: 390px;
     height: 100%;
+    margin-bottom: 50px;
   }
 
   .title-wrapper {
