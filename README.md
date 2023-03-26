@@ -7,4 +7,4 @@
 
 ## visit site
 
-- https://ocknyer.github.io/BottleNeck/
+- https://ocknyer.github.io/bottleneck/
