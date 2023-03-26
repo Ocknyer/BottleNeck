@@ -1,3 +1,27 @@
+nav {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  /* gap: 100px; */
+  width: 100%;
+  height: 70px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #c4c4c4;
+  font-size: 20px;
+}
+
+.linked {
+  width: 50%;
+  text-align: center;
+  color: black;
+}
+
+.linked:nth-child(1) {
+  border-right: 1px solid #c4c4c4;
+}
+
 #container {
   display: flex;
   width: 100%;
@@ -27,7 +51,7 @@ h2 {
 /* info */
 .title {
   font-size: 40px;
-  margin-top: 100px;
+  margin-top: 150px;
   margin-bottom: 50px;
 }
 
@@ -38,6 +62,7 @@ h2 {
   gap: 6px;
   width: 600px;
   height: 100px;
+  padding: 10px;
   background-color: rgba(23, 40, 77, 0.7);
   color: white;
   margin: 0 auto;
@@ -46,10 +71,12 @@ h2 {
 
 .concertName {
   font-size: 25px;
+  line-height: 25px;
 }
 
 .concertDesc {
   font-size: 20px;
+  line-height: 20px;
 }
 
 .info {
@@ -99,4 +126,221 @@ h2 {
 
 .setlist {
   margin-bottom: 50px;
+}
+
+/* modal */
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 70px;
+  height: 200px;
+  padding: 10px;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
+}
+
+/* Media Quary */
+/* Mobile - Portrait */
+@media (max-width: 575px) {
+  nav {
+    bottom: 0;
+    height: 50px;
+    font-size: 15px;
+  }
+
+  #container {
+    width: 100vw;
+    line-height: 23px;
+  }
+
+  h2 {
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  .main-wrapper {
+    width: 390px;
+    height: 100%;
+  }
+
+  .title-wrapper {
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  /* info */
+  .title {
+    font-size: 22px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  .about {
+    gap: 6px;
+    width: 300px;
+    height: 50px;
+    margin-bottom: 20px;
+  }
+
+  .concertName {
+    font-size: 15px;
+    line-height: 15px;
+  }
+
+  .concertDesc {
+    font-size: 13px;
+    line-height: 13px;
+  }
+
+  .info {
+    text-align: center;
+    font-size: 10px;
+    margin-bottom: 30px;
+  }
+
+  .visitRoot {
+    font-size: 17px;
+    margin: 30px 0 20px 0;
+  }
+
+  #map {
+    width: 250px;
+    height: 150px;
+  }
+
+  .reservation {
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+  }
+
+  /* lineup */
+  .lineup-section {
+    margin-bottom: 30px;
+  }
+
+  /* setlist */
+  .teamName {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .setlist {
+    margin-bottom: 30px;
+  }
+}
+
+/* Mobile - Landscape */
+@media (max-width: 767px) {
+  nav {
+    bottom: 0;
+    height: 50px;
+    font-size: 15px;
+  }
+
+  #container {
+    width: 100vw;
+    line-height: 23px;
+  }
+
+  h2 {
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  .main-wrapper {
+    width: 390px;
+    height: 100%;
+  }
+
+  .title-wrapper {
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  /* info */
+  .title {
+    font-size: 22px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  .about {
+    gap: 6px;
+    width: 300px;
+    height: 50px;
+    margin-bottom: 20px;
+  }
+
+  .concertName {
+    font-size: 15px;
+    line-height: 15px;
+  }
+
+  .concertDesc {
+    font-size: 13px;
+    line-height: 13px;
+  }
+
+  .info {
+    text-align: center;
+    font-size: 10px;
+    margin-bottom: 30px;
+  }
+
+  .visitRoot {
+    font-size: 17px;
+    margin: 30px 0 20px 0;
+  }
+
+  #map {
+    width: 250px;
+    height: 150px;
+  }
+
+  .reservation {
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+  }
+
+  /* lineup */
+  .lineup-section {
+    margin-bottom: 30px;
+  }
+
+  /* setlist */
+  .teamName {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .setlist {
+    margin-bottom: 30px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+}
+
+/* Desktop */
+@media (max-width: 1199px) {
 }
