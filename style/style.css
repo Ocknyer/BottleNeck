@@ -286,6 +286,10 @@ p {
     height: 150px;
   }
 
+  .openApp {
+    font-size: 12px;
+  }
+
   /* lineup */
   .lineup-section {
     margin-top: 50px;
