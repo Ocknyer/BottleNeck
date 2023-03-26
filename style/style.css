@@ -119,8 +119,22 @@ p {
   height: 300px;
   border: 1px solid #c4c4c4;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   z-index: 0;
+}
+
+.openApp {
+  display: inline-block;
+  padding: 0 10px;
+  color: black;
+  background-color: white;
+  border: 1px solid #c4c4c4;
+  border-radius: 50px;
+  margin-bottom: 30px;
+}
+
+.openApp-link {
+  color: black;
 }
 
 .reservation {
